@@ -1,0 +1,267 @@
+
+.plan-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+  padding: 0 2rem 2rem;
+  box-sizing: border-box;
+}
+
+.plan-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1rem;
+  color: #673ab7;
+  text-align: left;
+}
+
+.plan-section-header h3 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.plan-section-header p {
+  margin: 4px 0 0;
+  color: #5e35b1;
+}
+
+.plan-calendario {
+  display: grid;
+  grid-template-columns: minmax(320px, 360px) 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.plan-panel,
+.calendar-panel {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.4rem;
+  box-shadow: 0 4px 15px rgba(103, 58, 183, 0.15);
+}
+
+.plan-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.plan-etiqueta {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #7e57c2;
+  margin: 0 0 4px;
+}
+
+.plan-nombre {
+  margin: 2px 0;
+  color: #4b2e83;
+}
+
+.plan-objetivo,
+.plan-entrenador,
+.plan-vigencia {
+  margin: 2px 0;
+  color: #5f4b8b;
+}
+
+.plan-alumno {
+  text-align: right;
+  color: #4b2e83;
+}
+
+.plan-rol {
+  display: inline-block;
+  background: #ede7f6;
+  color: #5e35b1;
+  border-radius: 12px;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  margin-top: 6px;
+}
+
+.plan-rutinas {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.plan-rutinas-header h4 {
+  margin: 0;
+  color: #4b2e83;
+}
+
+.plan-rutinas-header p {
+  margin: 4px 0 0;
+  color: #6b4fbb;
+}
+
+.rutina-row {
+  border: 1px solid #ede7f6;
+  border-radius: 12px;
+  padding: 0.9rem;
+  background: #fbf9ff;
+}
+
+.rutina-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.rutina-nombre {
+  margin: 0;
+  color: #4b2e83;
+  font-weight: 600;
+}
+
+.rutina-descripcion {
+  margin: 4px 0 0;
+  color: #6b4fbb;
+  font-size: 0.9rem;
+}
+
+.dias-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.dia-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border: 1px solid #d1c4e9;
+  border-radius: 12px;
+  background: #fff;
+  color: #5e35b1;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.dia-chip input {
+  accent-color: #7e57c2;
+}
+
+.dia-chip.activo {
+  background: #7e57c2;
+  color: #fff;
+  border-color: #7e57c2;
+}
+
+.plan-error {
+  color: #d32f2f;
+  margin: 0.5rem 0 0;
+}
+
+.plan-loading {
+  color: #5e35b1;
+}
+
+.guardar-asignacion-btn {
+  margin-top: 0.8rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #7e57c2, #673ab7);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(103, 58, 183, 0.22);
+}
+
+.guardar-asignacion-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.calendar-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.calendar-subtitle {
+  margin: 2px 0 0;
+  color: #6b4fbb;
+}
+
+.sesiones-panel {
+  margin-top: 1rem;
+  border-top: 1px solid #ede7f6;
+  padding-top: 1rem;
+}
+
+.sesiones-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.sesiones-lista li {
+  background: #f8f6ff;
+  border: 1px solid #ede7f6;
+  border-radius: 10px;
+  padding: 8px 10px;
+}
+
+.sesiones-lista label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #4b2e83;
+}
+
+.sesiones-lista input {
+  accent-color: #7e57c2;
+}
+
+.sesion-vacia {
+  color: #6b4fbb;
+}
+
+.horario-editor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.35rem;
+}
+
+.horario-editor label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  color: #4b2e83;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+  .plan-section {
+    padding: 0 1rem 2rem;
+  }
+  .plan-calendario {
+    grid-template-columns: 1fr;
+  }
+  .plan-panel,
+  .calendar-panel {
+    width: 100%;
+  }
+  .plan-header {
+    flex-direction: column;
+  }
+  .plan-alumno {
+    text-align: left;
+  }
+}

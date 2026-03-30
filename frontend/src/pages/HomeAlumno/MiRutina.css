@@ -1,0 +1,69 @@
+.mi-rutina {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.4rem;
+  box-shadow: 0 4px 15px rgba(103, 58, 183, 0.15);
+}
+
+.mi-rutina-header h3 {
+  margin: 4px 0;
+  color: #4b2e83;
+}
+
+.rutinas-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.rutina-card {
+  border: 1px solid #ede7f6;
+  border-radius: 12px;
+  padding: 0.9rem;
+  background: #fbf9ff;
+}
+
+.rutina-card-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6rem;
+  align-items: baseline;
+  margin-bottom: 0.4rem;
+}
+
+.rutina-descripcion {
+  margin: 4px 0 0;
+  color: #6b4fbb;
+  font-size: 0.92rem;
+}
+
+.rutina-id {
+  background: #ede7f6;
+  color: #4b2e83;
+  border-radius: 10px;
+  padding: 4px 8px;
+  font-size: 0.8rem;
+}
+
+.ejercicios-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ejercicio-item {
+  padding: 8px 10px;
+  background: #fff;
+  border: 1px solid #e6def6;
+  border-radius: 10px;
+}
+
+.ejercicio-detalle {
+  margin: 2px 0 0;
+  color: #6b4fbb;
+  font-size: 0.9rem;
+}

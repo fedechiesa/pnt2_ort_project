@@ -1,0 +1,71 @@
+.perfil-container {
+  min-height: 100vh;
+  padding: 24px;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+.perfil-main {
+  max-width: 480px;
+  margin: 0 auto;
+  background: #111827;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.perfil-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.perfil-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.9rem;
+}
+
+.perfil-form input {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #374151;
+  background: #020617;
+  color: #e5e7eb;
+}
+
+.perfil-form button {
+  margin-top: 8px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #7c3aed;
+  color: white;
+  font-weight: 600;
+}
+
+.perfil-form button:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.perfil-message {
+  margin-top: 12px;
+  font-size: 0.9rem;
+}
+
+.avatar-preview {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.avatar-preview img {
+  max-width: 120px;
+  border-radius: 999px;
+  border: 2px solid #7c3aed;
+}

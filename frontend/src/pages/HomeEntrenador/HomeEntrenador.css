@@ -1,0 +1,104 @@
+
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #f8f6ff, #f0eaff);
+  font-family: "Inter", sans-serif;
+  color: #4b2e83;
+}
+
+.home-container .card button { width: 100%; }
+
+
+.home-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.welcome {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #673ab7; 
+}
+
+.subtitle {
+  color: #7e57c2;
+  margin-bottom: 2rem;
+}
+
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  gap: 2rem;
+  width: 90%;
+  max-width: 800px;
+}
+
+
+.card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 1.8rem;
+  box-shadow: 0 4px 15px rgba(103, 58, 183, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(103, 58, 183, 0.25);
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  color: #673ab7;
+  margin-bottom: 0.8rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1.2rem;
+}
+
+.card button {
+  background-color: #7e57c2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.4rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #5e35b1;
+}
+
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 2rem;
+}
+
+.logout-btn {
+  background-color: transparent;
+  color: #7e57c2;
+  border: none;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.logout-btn:hover {
+  color: #4b2e83;
+}
